@@ -1,8 +1,0 @@
-@import url(/node-modules/bootstrap/dist/css/bootstrap.min.css);
-* {
-  border: 1px solid lightgray;
-  padding: .25em;
-  margin: .25em; }
-
-h1 {
-  color: purple; }

@@ -1,16 +1,17 @@
 // Main stylesheet patternfly-web.scss
 
-@import 'reset';
-
-//not working...
-//@import '/node_modules/bootstrap/scss/bootstrap-flex.scss';
-@import ''../node_modules/bootstrap/scss/bootstrap-flex.scss';'
+//import bootstrap, flex version
+@import '../node_modules/bootstrap/scss/bootstrap-flex.scss';
 
 //import patternfly sass variables and mixins
-
-//import patternfly sass navigation
+@import 'variables';
+@import 'mixins';
 
 //import patternfly sass colors
+@import 'color-variables';
+
+//import patternfly sass navigation
+//@import 'navbar';
 
 
 h1 {color:blue;}
