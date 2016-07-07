@@ -1,6 +1,6 @@
 var gulp = require('gulp'),
     uglify = require('gulp-uglify'),
-    less = require('gulp-less'),
+    sass = require('gulp-sass'),
     plumber = require('gulp-plumber'),
     browserSync = require('browser-sync'),
     reload = browserSync.reload;
@@ -13,11 +13,11 @@ gulp.task('scripts', function(){
         .pipe(gulp.dest("js/minjs"));
 });
 
-// Compiles less on to /css
-gulp.task('less', function () {
-    gulp.src('less/**/*.less')
+// Compiles sass to /css
+gulp.task('sass', function () {
+    gulp.src('sass/**/*.scss')
         .pipe(plumber())
-        .pipe(less())
+        .pipe(sass())
         .pipe(gulp.dest('css'))
         .pipe(reload({stream:true}));
 });
@@ -39,9 +39,9 @@ gulp.task('bs-reload', function () {
 // watch for changes on files
 gulp.task('watch', function(){
     gulp.watch('js/*.js', ['scripts']);
-    gulp.watch('less/*.less', ['less']);
+    gulp.watch('sass/**/*.scss', ['sass']);
     gulp.watch("*.html", ['bs-reload']);
 });
 
 // deploys
-gulp.task('default',  ['scripts', 'less','browser-sync','watch']); 
+gulp.task('default',  ['scripts', 'sass','browser-sync','watch']);
