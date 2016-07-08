@@ -2,6 +2,12 @@
 // Navbar
 // --------------------------------------------------
 
+//temporarily defining variables so this will compile
+
+$grid-float-breakpoint-max: 768px;
+$grid-float-breakpoint: 10em;
+$fa-var-angle-down: 'v';
+
 .navbar-pf {
   background: $navbar-pf-bg-color;
   border: 0;
