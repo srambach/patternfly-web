@@ -8,28 +8,6 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!--<link rel="shortcut icon" href="../dist/img/favicon.ico">-->
-  <!--&lt;!&ndash; iPad retina icon &ndash;&gt;-->
-  <!--<link rel="apple-touch-icon-precomposed" sizes="152x152" href="../dist/img/apple-touch-icon-precomposed-152.png">-->
-  <!--&lt;!&ndash; iPad retina icon (iOS < 7) &ndash;&gt;-->
-  <!--<link rel="apple-touch-icon-precomposed" sizes="144x144" href="../dist/img/apple-touch-icon-precomposed-144.png">-->
-  <!--&lt;!&ndash; iPad non-retina icon &ndash;&gt;-->
-  <!--<link rel="apple-touch-icon-precomposed" sizes="76x76" href="../dist/img/apple-touch-icon-precomposed-76.png">-->
-  <!--&lt;!&ndash; iPad non-retina icon (iOS < 7) &ndash;&gt;-->
-  <!--<link rel="apple-touch-icon-precomposed" sizes="72x72" href="../dist/img/apple-touch-icon-precomposed-72.png">-->
-  <!--&lt;!&ndash; iPhone 6 Plus icon &ndash;&gt;-->
-  <!--<link rel="apple-touch-icon-precomposed" sizes="120x120" href="../dist/img/apple-touch-icon-precomposed-180.png">-->
-  <!--&lt;!&ndash; iPhone retina icon (iOS < 7) &ndash;&gt;-->
-  <!--<link rel="apple-touch-icon-precomposed" sizes="114x114" href="../dist/img/apple-touch-icon-precomposed-114.png">-->
-  <!--&lt;!&ndash; iPhone non-retina icon (iOS < 7) &ndash;&gt;-->
-  <!--<link rel="apple-touch-icon-precomposed" sizes="57x57" href="../dist/img/apple-touch-icon-precomposed-57.png">-->
-  <!--<link rel="stylesheet" href="../dist/css/patternfly.min.css" >-->
-  <!--<link rel="stylesheet" href="../dist/css/patternfly-additions.min.css" >-->
-  <!--<link href="tests.css" rel="stylesheet" media="screen, print">-->
-  <!--<script src="//code.jquery.com/jquery-2.1.4.min.js"></script>-->
-  <!--<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>-->
-  <!--<script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.7.3/js/bootstrap-select.min.js"></script>-->
-  <!--<script src="../dist/js/patternfly.min.js"></script>-->
 
   <link href="css/patternfly-web.css" rel="stylesheet" media="screen, print">
 </head>
@@ -43,10 +21,65 @@
     <span class="pficon pficon-warning-triangle-o"></span>
     This is an example navigation bar.
   </div>
+
+  <h2>Standard Bootstrap navbar</h2>
+  <nav class="navbar navbar-light bg-faded ">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <ul class="nav navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Features</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Pricing</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">About</a>
+      </li>
+    </ul>
+    <form class="form-inline pull-xs-right">
+      <input class="form-control" type="text" placeholder="Search">
+      <button class="btn btn-success-outline" type="submit">Search</button>
+    </form>
+  </nav>
+
   <hr>
-  <h2>Primary Navigation Bar</h2>
+  <h2>Standard Bootstrap navbar converted to PF navbar</h2>
+ <nav class="navbar navbar-dark bg-faded navbar-pf">
 
+   <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar2">
+     &#9776;
+   </button>
 
+<div class="collapse navbar-toggleable-xs" id="exCollapsingNavbar2">
+    <div class="navbar-header">
+      <!--<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse-1">-->
+        <!--<span class="sr-only">Toggle navigation</span>-->
+        <!--<span class="icon-bar"></span>-->
+        <!--<span class="icon-bar"></span>-->
+        <!--<span class="icon-bar"></span>-->
+      <!--</button>-->
+      <a class="navbar-brand" href="/">
+        <img src="../dist/img/brand.svg" alt="PatternFly Enterprise Application" />
+      </a>
+    </div><!-- .navbar-header -->
+
+   <div class="nav navbar-nav">
+       <a class="nav-item nav-link" href="#">First Link <span class="sr-only">(current)</span></a>
+       <a class="nav-item nav-link active" href="#">Another Link</a>
+       <a class="nav-item nav-link" href="#">And Another</a>
+       <a class="nav-item nav-link" href="#">As a General Rule</a>
+       <a class="nav-item nav-link" href="#">Five to Seven Links</a>
+       <a class="nav-item nav-link" href="#">Is Good</a>
+   </div> <!-- .nav .navbar-nav -->
+ </div>
+</nav>
+
+  <hr>
+
+  <h2>Primary Navigation Bar (old style)</h2>
   <nav class="navbar navbar-default navbar-pf" role="navigation">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse-1">
