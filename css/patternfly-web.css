@@ -4752,6 +4752,27 @@ a.bg-danger:focus, a.bg-danger:hover {
 .btn-group-xs .btn {
   font-weight: 400; }
 
+.coversheet {
+  background: #2E1811;
+  background-image: url("../dist/img/iceland-images-18.jpg");
+  background-size: cover;
+  padding: 2rem 0;
+  color: #fff;
+  font-family: 'BauerBodoniW01-BoldDisp', georgia, serif;
+  text-align: center;
+  text-shadow: 0px 1px 6px rgba(0, 0, 0, 0.6);
+  display: flex;
+  height: 100vh; }
+  .coversheet h1 {
+    width: 80%;
+    margin: 0 auto;
+    line-height: 1.1em;
+    font-size: 2rem;
+    margin: auto; }
+    @media (min-width: 500px) {
+      .coversheet h1 {
+        font-size: 4rem; } }
+
 .jumbotron-pf {
   background-color: #030303;
   color: #fff;
@@ -4785,6 +4806,14 @@ a.bg-danger:focus, a.bg-danger:hover {
 .media-pf-dark {
   background-color: #0088ce;
   color: #fff; }
+
+.circlewrap img {
+  width: 10em;
+  float: left;
+  margin: 1em;
+  -webkit-clip-path: circle();
+  clip-path: circle();
+  shape-outside: circle(); }
 
 .navbar-pf {
   background: #030303;

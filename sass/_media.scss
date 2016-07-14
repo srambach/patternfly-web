@@ -3,6 +3,17 @@
 // --------------------------------------------------
 
 .media-pf-dark {
-  background-color: $color-pf-blue;
-  color: $color-pf-white;
+    background-color: $color-pf-blue;
+    color: $color-pf-white;
+  }
+
+.circlewrap {
+  img {
+    width: 10em;
+    float: left;
+    margin: 1em;
+    -webkit-clip-path: circle();
+    clip-path: circle();
+    shape-outside: circle();
+  }
 }
