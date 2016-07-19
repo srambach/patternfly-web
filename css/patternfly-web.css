@@ -4813,6 +4813,7 @@ a.bg-danger:focus, a.bg-danger:hover {
   margin: 1em;
   -webkit-clip-path: circle();
   clip-path: circle();
+  -webkit-shape-outside: circle();
   shape-outside: circle(); }
 
 .navbar-pf {
